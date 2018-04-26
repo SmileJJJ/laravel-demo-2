@@ -18,3 +18,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::any('/upload', 'StudentController@upload');
+Route::any('/mail', 'StudentController@mail');
+Route::any('/cache1', 'StudentController@cache1');
+Route::any('/cache2', 'StudentController@cache2');
+Route::any('/error', 'StudentController@error');
+Route::any('/queue', 'StudentController@queue');
